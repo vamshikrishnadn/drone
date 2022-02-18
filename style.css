@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
+}
+/* body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+} */
+
+main {
+  position: relative;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  justify-content: space-around;
+  align-self: center;
+  margin: auto;
+  align-items: center;
+}
+
+video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  list-style: none;
+  margin: 20px;
+  font-size: 1.1rem;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0%;
+  top: 50%;
+  z-index: 100;
+  transform: translateY(-50%);
+  background-color: #5f732d66;
+  padding: 1rem 1.5rem 1rem 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1999;
+  background: #275480;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons i {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  color: #fff !important;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.icons .fa-facebook:hover {
+  color: blue !important;
+  transform: scale(1.5);
+}
+.icons .fa-youtube:hover {
+  color: #e95950 !important;
+  transform: scale(1.5);
+}
+.icons .fa-linkedin:hover {
+  color: #0077b5 !important;
+  transform: scale(1.5);
+}
+
+.navlinks a {
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+.preloader img {
+  width: 400px;
+}
+
+@media only screen and (max-width: 500px) {
+  video {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .preloader img {
+    width: 200px;
+  }
+
+  .icons {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 0%;
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+    background-color: red;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+}
